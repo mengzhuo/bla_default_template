@@ -21,6 +21,6 @@ p {word-wrap:break-word;}
 .date {color:#888;font-size:0.6em;}
 .submit {padding:0.3em 0.5em;}
 pre, code {font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace;font-size:0.8em;}
-pre {background: #EFEFEF; padding: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+pre {background: #EFEFEF; padding: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; overflow:auto;}
 img {max-width:95% !important; height:auto;}
 blockquote {border-left:2px dashed #ccc;padding-left:1em;margin-left:1em;}
