@@ -75,7 +75,10 @@ tinymce.init({
     selector: ".article",
     inline: true,
     browser_spellcheck : true,
-    style_formats: [{title:"Tag", inline:"span", classes:"tag"}],
+    style_formats: [{title:"Tag", inline:"span", classes:"tag"}, 
+                    {title:"code<>", inline:"code"},
+                    {title:"h3", inline:"h3"},
+                    ],
     plugins: [
         "advlist autolink lists link image charmap anchor",
         "searchreplace visualblocks code",
