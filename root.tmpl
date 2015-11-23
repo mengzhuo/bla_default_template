@@ -9,10 +9,10 @@
         {{range $path := .Server.StaticFiles}}
         {{with $pathExt := $path | ext }}
                 {{ if eq $pathExt ".css"}}
-                <link rel="stylesheet" href="{{ $.Cfg.BasePath }}asset/{{$path | base}}">
+                <link rel="stylesheet" href="{{ join $.Cfg.BasePath "asset"}}/{{$path | base}}">
                 {{end}}
                 {{ if eq $pathExt ".js"}}
-                <script src="{{ $.Cfg.BasePath }}asset/{{$path | base}}"></script>
+                <script src="{{ join $.Cfg.BasePath "asset"}}/{{$path | base}}"></script>
                 {{end}}
             {{end}}
         {{end}} 
