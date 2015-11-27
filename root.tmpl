@@ -36,7 +36,7 @@
 {{end}}
 
 {{define "doc"}}
-<div class="article" >
+<div itemscope itemtype="http://schema.org/Article"  class="article" >
     {{ .Parsed.First.Html }}
     {{ $rl := len .Related }}
     {{if gt $rl 0}}
