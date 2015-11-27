@@ -37,7 +37,7 @@
 
 {{define "doc"}}
 <div itemscope itemtype="http://schema.org/Article"  class="article" >
-    {{ .Parsed.First.Html }}
+    {{ with .Parsed.Find "body" }}{{ .Html }}{{end}}
     {{ $rl := len .Related }}
     {{if gt $rl 0}}
     <p>Related article:
@@ -55,7 +55,7 @@
 
 {{define "shortdoc"}}
 <div class="article">
-{{ .Parsed.First.Html }}
+{{ with .Parsed.Find "body" }}{{ .Html }}{{end}}
 </div>
 {{end}}
 
