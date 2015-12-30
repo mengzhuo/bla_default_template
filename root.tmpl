@@ -40,7 +40,7 @@
     {{ with .Parsed.Find "body" }}{{ .Html }}{{end}}
     {{ $rl := len .Related }}
     {{if gt $rl 0}}
-    <p>Related article:
+    <h4 class='related_header'>Related article</h4>:
         <ul>
         {{range $index, $doc := .Related }}
             {{ if lt $index 10 }}
@@ -48,7 +48,6 @@
             {{ end }}
         {{end}}
         </ul>
-    </p>
     {{ end }} 
 </div>
 {{end}}
