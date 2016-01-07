@@ -21,6 +21,9 @@
     <div id="topbar">
         <div class="container">
             <h1><a href="{{ .Cfg.BasePath }}">{{ .Cfg.Title }}</a></h1>
+            <form onsubmit="return dispatch()">
+                <input id="q" placeholder="Search" type='text'></input>
+            </form>
         </div>
     </div>
     
@@ -31,6 +34,22 @@
     <div id="footer">
         {{ template "footer" . }}
     </div>
+    <script>
+    function dispatch() {
+        var q = document.getElementById("q");
+        if (q.value != "") {
+            var url = 'http://www.google.com/search?q=site:{{.Cfg.BaseURL | extractHost }}%20' + q.value;
+                if (navigator.userAgent.indexOf('iPad') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('iPhone') > -1) {
+                            location.href = url;
+                        } else {
+                            window.open(url, "_blank");
+                        }
+                return false;
+            } else {
+                return false;
+            }
+    }
+    </script>
     </body>
 </html>
 {{end}}
