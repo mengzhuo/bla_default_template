@@ -5,7 +5,7 @@ a:hover {text-decoration: underline; }
 #topbar:after {content:"";display:block;clear:both;}
 #topbar h1{margin:0.5em 0;font-size:1.5em;max-width:950px;text-align:left;float:left;}
 #topbar a{color:#222;}
-#topbar form{float:right;}
+#topbar form{float:right;margin: 0.5em 0;}
 #topbar input{padding: 0.5em; border:#ccc 1px solid; border-radius: 4px;}
 
 .container{padding:0 1.5em;margin:0 auto;text-align:left;max-width:950px;}
