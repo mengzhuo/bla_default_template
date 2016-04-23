@@ -22,9 +22,12 @@
     <div id="topbar">
         <div class="container">
             <h1><a href="{{ .Cfg.BasePath }}">{{ .Cfg.Title }}</a></h1>
-            <form onsubmit="return dispatch()">
-                <input id="q" placeholder="Search" type='text'></input>
-            </form>
+            <div class="menu">
+                <a href="{{join .Cfg.BasePath "indexes.html"}}"> Index</a>
+                <form onsubmit="return dispatch()">
+                    <input id="q" placeholder="Search" type='text'></input>
+                </form>
+            </div>
         </div>
     </div>
     

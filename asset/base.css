@@ -6,8 +6,10 @@ a:hover {text-decoration: underline; }
 #topbar h1{margin:0.5em 0;font-size:1.5em;max-width:950px;text-align:left;float:left;}
 #topbar a{color:#222;}
 #topbar form{float:right;margin: 0.5em 0;}
+#topbar .menu {float:right;}
+#topbar .menu a{ padding: 5px 10px; float: left; margin: 0.5em; background: #375eab; color: #fff; border-radius: 5px; }
+#topbar .menu a:hover {text-decoration:none; box-shadow: 1px 1px 5px #111;}
 #topbar input{padding: 0.5em; border:#ccc 1px solid; border-radius: 4px;}
-
 .container{padding:0 1.5em;margin:0 auto;text-align:left;max-width:950px;}
 .container:after{content:"";display:block;clear:both;}
 .article {text-align:left;border-bottom:1px solid #ddd;}
